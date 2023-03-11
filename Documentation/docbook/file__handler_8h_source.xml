@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_file__handler_8h_source" xml:lang="en-US">
+<title>file_handler.h</title>
+<indexterm><primary>1-gyakorlat/helper-libraries/file_handler.h</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered">1 <emphasis role="preprocessor">#ifndef&#32;FILE_HANDLER_H_&#32;</emphasis>
+2 <emphasis role="preprocessor">#define&#32;FILE_HANDLER_H_</emphasis>
+3 
+4 <emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_file__handler_8h_1ac15ae72d3138ff30c1f8e35679b77e0e">check_file_size</link>(<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">char</emphasis>&#32;*file_path);
+5 <emphasis role="keywordtype">int</emphasis>*&#32;<link linkend="_file__handler_8h_1a941c539421e2a0fdcd0898a0346ef059">read_int_file_contents</link>(<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">char</emphasis>*&#32;file_path,&#32;<emphasis role="keywordtype">int</emphasis>*&#32;num_elements);
+6 <emphasis role="keywordtype">long</emphasis>*&#32;<link linkend="_file__handler_8h_1a061824c3cfd1dfc2e0539eb8a0f9516e">read_long_file_contents</link>(<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">char</emphasis>*&#32;file_path,&#32;<emphasis role="keywordtype">int</emphasis>*&#32;num_elements);
+7 <emphasis role="keywordtype">float</emphasis>*&#32;<link linkend="_file__handler_8h_1a94b6f4fe96a40c25aff2ef5c9b31aceb">read_float_file_contents</link>(<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">char</emphasis>*&#32;file_path,&#32;<emphasis role="keywordtype">int</emphasis>*&#32;num_elements);
+8 <emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_file__handler_8h_1aa4358384cb83dae8ddffa119fb9661c8">write_int_array_to_file</link>(<emphasis role="keywordtype">int</emphasis>&#32;arr[],&#32;<emphasis role="keywordtype">int</emphasis>&#32;size,&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">char</emphasis>*&#32;filename);
+9 <emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_file__handler_8h_1a1a8f5a1584d8481bee7a405e264c8cec">write_long_array_to_file</link>(<emphasis role="keywordtype">long</emphasis>&#32;arr[],&#32;<emphasis role="keywordtype">int</emphasis>&#32;size,&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">char</emphasis>*&#32;filename);
+10 <emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_file__handler_8h_1ab3637f7a9b45530ad0138060e0edeec9">write_float_array_to_file</link>(<emphasis role="keywordtype">float</emphasis>&#32;arr[],&#32;<emphasis role="keywordtype">int</emphasis>&#32;size,&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">char</emphasis>*&#32;filename);
+11 
+12 <emphasis role="preprocessor">#endif&#32;</emphasis><emphasis role="comment">//FILE_HANDLER_H_</emphasis>
+</programlisting></section>

@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_7-feladat_8c" xml:lang="en-US">
+<title>1-gyakorlat/7-feladat.c File Reference</title>
+<indexterm><primary>1-gyakorlat/7-feladat.c</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &lt;stdio.h&gt;<?linebreak?>#include &lt;stdbool.h&gt;<?linebreak?>#include &lt;time.h&gt;<?linebreak?></programlisting><simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>bool <link linkend="_7-feladat_8c_1a4583e2d9b8c108304fbeda300d2a4450">is_prime</link> (int n)</para>
+</listitem>
+            <listitem><para>void <link linkend="_7-feladat_8c_1a55108322cef6b8b89d9769f5ea932e66">count_primes</link> (int n)</para>
+</listitem>
+            <listitem><para>int <link linkend="_7-feladat_8c_1ae66f6b31b5ad750f1fe042a706a4e3d4">main</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_7-feladat_8c_1a55108322cef6b8b89d9769f5ea932e66"/><section>
+    <title>count_primes()</title>
+<indexterm><primary>count_primes</primary><secondary>7-feladat.c</secondary></indexterm>
+<indexterm><primary>7-feladat.c</primary><secondary>count_primes</secondary></indexterm>
+<para><computeroutput>void count_primes (int n)</computeroutput></para>
+<para>Counts how many prime numbers are in a range of [1, <emphasis>n</emphasis>]. </para>
+</section>
+<anchor xml:id="_7-feladat_8c_1a4583e2d9b8c108304fbeda300d2a4450"/><section>
+    <title>is_prime()</title>
+<indexterm><primary>is_prime</primary><secondary>7-feladat.c</secondary></indexterm>
+<indexterm><primary>7-feladat.c</primary><secondary>is_prime</secondary></indexterm>
+<para><computeroutput>bool is_prime (int n)</computeroutput></para>
+<para>Check if given int parameter is a prime.</para>
+
+<para>Returns: <emphasis>&apos;true&apos;</emphasis> if prime and <emphasis>&apos;false&apos;</emphasis> if not prime. </para>
+</section>
+<anchor xml:id="_7-feladat_8c_1ae66f6b31b5ad750f1fe042a706a4e3d4"/><section>
+    <title>main()</title>
+<indexterm><primary>main</primary><secondary>7-feladat.c</secondary></indexterm>
+<indexterm><primary>7-feladat.c</primary><secondary>main</secondary></indexterm>
+<para><computeroutput>int main ( )</computeroutput></para>
+<para>Define a function that takes an <emphasis>n</emphasis> positive integer as its argument which calculates how many primes is in the [1, <emphasis>n</emphasis> ] interval.</para>
+
+<para>Time how long it takes for it to calculate for &apos;n=1.000&apos;, &apos;n=2.000&apos;, &apos;n=3.000&apos;, ..., &apos;n=20.000&apos;.</para>
+
+<para>Make a graph from the results. (Can be found with the name &apos;measurements/7-feladat.xlsx&apos;) </para>
+</section>
+</section>
+</section>

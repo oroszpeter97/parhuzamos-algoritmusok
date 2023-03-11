@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<book xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_index" xml:lang="en-US">
+    <info>
+    <title>parhuzamos-algoritmusok</title>
+    </info>
+<chapter>
+    <title>File Documentation</title>
+    <xi:include href="3__feladat_8c.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="4__feladat_8c.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="5__feladat_8c.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="6__feladat_8c.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="7__feladat_8c.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="8__feladat_8c.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="9__feladat_8c.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="file__handler_8c.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="file__handler_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="file__handler_8h_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</chapter>
+<index/>
+</book>

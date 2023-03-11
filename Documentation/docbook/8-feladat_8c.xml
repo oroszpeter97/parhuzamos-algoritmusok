@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_8-feladat_8c" xml:lang="en-US">
+<title>1-gyakorlat/8-feladat.c File Reference</title>
+<indexterm><primary>1-gyakorlat/8-feladat.c</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &lt;stdio.h&gt;<?linebreak?>#include &lt;sys/stat.h&gt;<?linebreak?>#include &lt;stdlib.h&gt;<?linebreak?></programlisting><simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>int * <link linkend="_8-feladat_8c_1a941c539421e2a0fdcd0898a0346ef059">read_int_file_contents</link> (const char *file_path, int *num_elements)</para>
+</listitem>
+            <listitem><para>long * <link linkend="_8-feladat_8c_1a061824c3cfd1dfc2e0539eb8a0f9516e">read_long_file_contents</link> (const char *file_path, int *num_elements)</para>
+</listitem>
+            <listitem><para>float * <link linkend="_8-feladat_8c_1a94b6f4fe96a40c25aff2ef5c9b31aceb">read_float_file_contents</link> (const char *file_path, int *num_elements)</para>
+</listitem>
+            <listitem><para>int <link linkend="_8-feladat_8c_1ac15ae72d3138ff30c1f8e35679b77e0e">check_file_size</link> (const char *file_path)</para>
+</listitem>
+            <listitem><para>void <link linkend="_8-feladat_8c_1a14a6c0077bc4b6e26f1f155ca3831cff">write_int_array_to_file</link> (int arr[], int size, const char *filename)</para>
+</listitem>
+            <listitem><para>void <link linkend="_8-feladat_8c_1a22d6ca72586ff4ebe7fcb63bda98ea33">write_long_array_to_file</link> (long arr[], int size, const char *filename)</para>
+</listitem>
+            <listitem><para>void <link linkend="_8-feladat_8c_1ab7d27c9679a53ff40eaae131cca09e59">write_float_array_to_file</link> (float arr[], int size, const char *filename)</para>
+</listitem>
+            <listitem><para>int <link linkend="_8-feladat_8c_1ae66f6b31b5ad750f1fe042a706a4e3d4">main</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_8-feladat_8c_1ac15ae72d3138ff30c1f8e35679b77e0e"/><section>
+    <title>check_file_size()</title>
+<indexterm><primary>check_file_size</primary><secondary>8-feladat.c</secondary></indexterm>
+<indexterm><primary>8-feladat.c</primary><secondary>check_file_size</secondary></indexterm>
+<para><computeroutput>int check_file_size (const char * file_path)</computeroutput></para></section>
+<anchor xml:id="_8-feladat_8c_1ae66f6b31b5ad750f1fe042a706a4e3d4"/><section>
+    <title>main()</title>
+<indexterm><primary>main</primary><secondary>8-feladat.c</secondary></indexterm>
+<indexterm><primary>8-feladat.c</primary><secondary>main</secondary></indexterm>
+<para><computeroutput>int main ( )</computeroutput></para>
+<para>Write a program that writes the contents of an <emphasis>array</emphasis> into a file.<itemizedlist>
+<listitem>
+<para>Do it in a seperate function.</para>
+</listitem><listitem>
+<para>Make a seperate function for <emphasis>int</emphasis> , <emphasis>long</emphasis> and <emphasis>float</emphasis>.</para>
+</listitem><listitem>
+<para>Check the size of the files created.</para>
+</listitem><listitem>
+<para>Make a seperate function for the reading of these files. </para>
+</listitem></itemizedlist>
+</para>
+</section>
+<anchor xml:id="_8-feladat_8c_1a94b6f4fe96a40c25aff2ef5c9b31aceb"/><section>
+    <title>read_float_file_contents()</title>
+<indexterm><primary>read_float_file_contents</primary><secondary>8-feladat.c</secondary></indexterm>
+<indexterm><primary>8-feladat.c</primary><secondary>read_float_file_contents</secondary></indexterm>
+<para><computeroutput>float * read_float_file_contents (const char * file_path, int * num_elements)</computeroutput></para></section>
+<anchor xml:id="_8-feladat_8c_1a941c539421e2a0fdcd0898a0346ef059"/><section>
+    <title>read_int_file_contents()</title>
+<indexterm><primary>read_int_file_contents</primary><secondary>8-feladat.c</secondary></indexterm>
+<indexterm><primary>8-feladat.c</primary><secondary>read_int_file_contents</secondary></indexterm>
+<para><computeroutput>int * read_int_file_contents (const char * file_path, int * num_elements)</computeroutput></para>
+<para>Parameters:<itemizedlist>
+<listitem>
+<para><emphasis>const</emphasis> <emphasis>char*</emphasis> <emphasis>file_path</emphasis> : A pointer to a char array where the file is located.</para>
+</listitem><listitem>
+<para><emphasis>int*</emphasis> <emphasis>num_elements</emphasis> : A pointer to and integer where the length of the returned arry is stored. <?linebreak?></para>
+</listitem></itemizedlist>
+</para>
+
+<para>Returns:<itemizedlist>
+<listitem>
+<para>A pointer to the start of the array.</para>
+</listitem></itemizedlist>
+</para>
+
+<para>Details: Reads a file that contains integers seperated by a space. </para>
+</section>
+<anchor xml:id="_8-feladat_8c_1a061824c3cfd1dfc2e0539eb8a0f9516e"/><section>
+    <title>read_long_file_contents()</title>
+<indexterm><primary>read_long_file_contents</primary><secondary>8-feladat.c</secondary></indexterm>
+<indexterm><primary>8-feladat.c</primary><secondary>read_long_file_contents</secondary></indexterm>
+<para><computeroutput>long * read_long_file_contents (const char * file_path, int * num_elements)</computeroutput></para></section>
+<anchor xml:id="_8-feladat_8c_1ab7d27c9679a53ff40eaae131cca09e59"/><section>
+    <title>write_float_array_to_file()</title>
+<indexterm><primary>write_float_array_to_file</primary><secondary>8-feladat.c</secondary></indexterm>
+<indexterm><primary>8-feladat.c</primary><secondary>write_float_array_to_file</secondary></indexterm>
+<para><computeroutput>void write_float_array_to_file (float arr[], int size, const char * filename)</computeroutput></para></section>
+<anchor xml:id="_8-feladat_8c_1a14a6c0077bc4b6e26f1f155ca3831cff"/><section>
+    <title>write_int_array_to_file()</title>
+<indexterm><primary>write_int_array_to_file</primary><secondary>8-feladat.c</secondary></indexterm>
+<indexterm><primary>8-feladat.c</primary><secondary>write_int_array_to_file</secondary></indexterm>
+<para><computeroutput>void write_int_array_to_file (int arr[], int size, const char * filename)</computeroutput></para></section>
+<anchor xml:id="_8-feladat_8c_1a22d6ca72586ff4ebe7fcb63bda98ea33"/><section>
+    <title>write_long_array_to_file()</title>
+<indexterm><primary>write_long_array_to_file</primary><secondary>8-feladat.c</secondary></indexterm>
+<indexterm><primary>8-feladat.c</primary><secondary>write_long_array_to_file</secondary></indexterm>
+<para><computeroutput>void write_long_array_to_file (long arr[], int size, const char * filename)</computeroutput></para></section>
+</section>
+</section>

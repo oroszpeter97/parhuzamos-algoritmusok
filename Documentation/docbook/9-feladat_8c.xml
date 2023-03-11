@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_9-feladat_8c" xml:lang="en-US">
+<title>1-gyakorlat/9-feladat.c File Reference</title>
+<indexterm><primary>1-gyakorlat/9-feladat.c</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &lt;stdio.h&gt;<?linebreak?>#include &lt;stdlib.h&gt;<?linebreak?>#include &lt;time.h&gt;<?linebreak?></programlisting><simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>int * <link linkend="_9-feladat_8c_1aabcaf4c276d6bd173d9845b8204ca71d">generate_random_numbers_array</link> (int n)</para>
+</listitem>
+            <listitem><para>void <link linkend="_9-feladat_8c_1a14a6c0077bc4b6e26f1f155ca3831cff">write_int_array_to_file</link> (int arr[], int size, const char *filename)</para>
+</listitem>
+            <listitem><para>int <link linkend="_9-feladat_8c_1a0ddf1224851353fc92bfbff6f499fa97">main</link> (int argc, char *argv[])</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_9-feladat_8c_1aabcaf4c276d6bd173d9845b8204ca71d"/><section>
+    <title>generate_random_numbers_array()</title>
+<indexterm><primary>generate_random_numbers_array</primary><secondary>9-feladat.c</secondary></indexterm>
+<indexterm><primary>9-feladat.c</primary><secondary>generate_random_numbers_array</secondary></indexterm>
+<para><computeroutput>int * generate_random_numbers_array (int n)</computeroutput></para></section>
+<anchor xml:id="_9-feladat_8c_1a0ddf1224851353fc92bfbff6f499fa97"/><section>
+    <title>main()</title>
+<indexterm><primary>main</primary><secondary>9-feladat.c</secondary></indexterm>
+<indexterm><primary>9-feladat.c</primary><secondary>main</secondary></indexterm>
+<para><computeroutput>int main (int argc, char * argv[])</computeroutput></para></section>
+<anchor xml:id="_9-feladat_8c_1a14a6c0077bc4b6e26f1f155ca3831cff"/><section>
+    <title>write_int_array_to_file()</title>
+<indexterm><primary>write_int_array_to_file</primary><secondary>9-feladat.c</secondary></indexterm>
+<indexterm><primary>9-feladat.c</primary><secondary>write_int_array_to_file</secondary></indexterm>
+<para><computeroutput>void write_int_array_to_file (int arr[], int size, const char * filename)</computeroutput></para></section>
+</section>
+</section>

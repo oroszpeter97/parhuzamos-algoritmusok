@@ -1,0 +1,192 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_file__handler_8c" xml:lang="en-US">
+<title>1-gyakorlat/helper-libraries/file_handler.c File Reference</title>
+<indexterm><primary>1-gyakorlat/helper-libraries/file_handler.c</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &lt;stdio.h&gt;<?linebreak?>#include &lt;stdlib.h&gt;<?linebreak?>#include &lt;sys/stat.h&gt;<?linebreak?>#include &quot;file_handler.h&quot;<?linebreak?></programlisting><simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>int <link linkend="_file__handler_8c_1ac15ae72d3138ff30c1f8e35679b77e0e">check_file_size</link> (const char *file_path)</para>
+</listitem>
+            <listitem><para>int * <link linkend="_file__handler_8c_1a941c539421e2a0fdcd0898a0346ef059">read_int_file_contents</link> (const char *file_path, int *num_elements)</para>
+</listitem>
+            <listitem><para>long * <link linkend="_file__handler_8c_1a061824c3cfd1dfc2e0539eb8a0f9516e">read_long_file_contents</link> (const char *file_path, int *num_elements)</para>
+</listitem>
+            <listitem><para>float * <link linkend="_file__handler_8c_1a94b6f4fe96a40c25aff2ef5c9b31aceb">read_float_file_contents</link> (const char *file_path, int *num_elements)</para>
+</listitem>
+            <listitem><para>int <link linkend="_file__handler_8c_1aa4358384cb83dae8ddffa119fb9661c8">write_int_array_to_file</link> (int arr[], int size, const char *filename)</para>
+</listitem>
+            <listitem><para>int <link linkend="_file__handler_8c_1a1a8f5a1584d8481bee7a405e264c8cec">write_long_array_to_file</link> (long arr[], int size, const char *filename)</para>
+</listitem>
+            <listitem><para>int <link linkend="_file__handler_8c_1ab3637f7a9b45530ad0138060e0edeec9">write_float_array_to_file</link> (float arr[], int size, const char *filename)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_file__handler_8c_1ac15ae72d3138ff30c1f8e35679b77e0e"/><section>
+    <title>check_file_size()</title>
+<indexterm><primary>check_file_size</primary><secondary>file_handler.c</secondary></indexterm>
+<indexterm><primary>file_handler.c</primary><secondary>check_file_size</secondary></indexterm>
+<para><computeroutput>int check_file_size (const char * file_path)</computeroutput></para>
+<para>Parameters:<itemizedlist>
+<listitem>
+<para>file_path : A pointer to a char array where the file is located.</para>
+</listitem></itemizedlist>
+</para>
+
+<para>Returns:<itemizedlist>
+<listitem>
+<para>The size of the file in bytes as an integer : The file exists and a regular file.</para>
+</listitem><listitem>
+<para>-1 : The file doesn&apos;t exist.</para>
+</listitem><listitem>
+<para>-2 : The file exists but it&apos;s not a regular file. </para>
+</listitem></itemizedlist>
+</para>
+</section>
+<anchor xml:id="_file__handler_8c_1a94b6f4fe96a40c25aff2ef5c9b31aceb"/><section>
+    <title>read_float_file_contents()</title>
+<indexterm><primary>read_float_file_contents</primary><secondary>file_handler.c</secondary></indexterm>
+<indexterm><primary>file_handler.c</primary><secondary>read_float_file_contents</secondary></indexterm>
+<para><computeroutput>float * read_float_file_contents (const char * file_path, int * num_elements)</computeroutput></para>
+<para>Parameters:<itemizedlist>
+<listitem>
+<para>file_path : A pointer to a char array where the file is located.</para>
+</listitem><listitem>
+<para>num_elements : A pointer to and integer where the length of the returned array is stored. <?linebreak?></para>
+</listitem></itemizedlist>
+</para>
+
+<para>Returns:<itemizedlist>
+<listitem>
+<para>A pointer to the start of the array.</para>
+</listitem><listitem>
+<para>If file doesn&apos;t exist : NULL</para>
+</listitem></itemizedlist>
+</para>
+
+<para>Details: Reads a file that contains floats seperated by a space. </para>
+</section>
+<anchor xml:id="_file__handler_8c_1a941c539421e2a0fdcd0898a0346ef059"/><section>
+    <title>read_int_file_contents()</title>
+<indexterm><primary>read_int_file_contents</primary><secondary>file_handler.c</secondary></indexterm>
+<indexterm><primary>file_handler.c</primary><secondary>read_int_file_contents</secondary></indexterm>
+<para><computeroutput>int * read_int_file_contents (const char * file_path, int * num_elements)</computeroutput></para>
+<para>Parameters:<itemizedlist>
+<listitem>
+<para>file_path : A pointer to a char array where the file is located.</para>
+</listitem><listitem>
+<para>num_elements : A pointer to and integer where the length of the returned array is stored. <?linebreak?></para>
+</listitem></itemizedlist>
+</para>
+
+<para>Returns:<itemizedlist>
+<listitem>
+<para>A pointer to the start of the array : File exists.</para>
+</listitem><listitem>
+<para>NULL : File doesn&apos;t exist.</para>
+</listitem></itemizedlist>
+</para>
+
+<para>Details: Reads a file that contains integers seperated by a space. </para>
+</section>
+<anchor xml:id="_file__handler_8c_1a061824c3cfd1dfc2e0539eb8a0f9516e"/><section>
+    <title>read_long_file_contents()</title>
+<indexterm><primary>read_long_file_contents</primary><secondary>file_handler.c</secondary></indexterm>
+<indexterm><primary>file_handler.c</primary><secondary>read_long_file_contents</secondary></indexterm>
+<para><computeroutput>long * read_long_file_contents (const char * file_path, int * num_elements)</computeroutput></para>
+<para>Parameters:<itemizedlist>
+<listitem>
+<para>file_path : A pointer to a char array where the file is located.</para>
+</listitem><listitem>
+<para>num_elements : A pointer to and integer where the length of the returned array is stored. <?linebreak?></para>
+</listitem></itemizedlist>
+</para>
+
+<para>Returns:<itemizedlist>
+<listitem>
+<para>A pointer to the start of the array.</para>
+</listitem><listitem>
+<para>If file doesn&apos;t exist : NULL</para>
+</listitem></itemizedlist>
+</para>
+
+<para>Details: Reads a file that contains longs seperated by a space. </para>
+</section>
+<anchor xml:id="_file__handler_8c_1ab3637f7a9b45530ad0138060e0edeec9"/><section>
+    <title>write_float_array_to_file()</title>
+<indexterm><primary>write_float_array_to_file</primary><secondary>file_handler.c</secondary></indexterm>
+<indexterm><primary>file_handler.c</primary><secondary>write_float_array_to_file</secondary></indexterm>
+<para><computeroutput>int write_float_array_to_file (float arr[], int size, const char * filename)</computeroutput></para>
+<para>Parameters:<itemizedlist>
+<listitem>
+<para>arr : The float array to be written.</para>
+</listitem><listitem>
+<para>size : The length of the array.</para>
+</listitem><listitem>
+<para>filename : The path of the file to be created.</para>
+</listitem></itemizedlist>
+</para>
+
+<para>Returns:<itemizedlist>
+<listitem>
+<para>0 : The file was created and written succesfully.</para>
+</listitem><listitem>
+<para>-1 : The file couldn&apos;t be created.</para>
+</listitem></itemizedlist>
+</para>
+
+<para>Details: Writes a float array to a file. </para>
+</section>
+<anchor xml:id="_file__handler_8c_1aa4358384cb83dae8ddffa119fb9661c8"/><section>
+    <title>write_int_array_to_file()</title>
+<indexterm><primary>write_int_array_to_file</primary><secondary>file_handler.c</secondary></indexterm>
+<indexterm><primary>file_handler.c</primary><secondary>write_int_array_to_file</secondary></indexterm>
+<para><computeroutput>int write_int_array_to_file (int arr[], int size, const char * filename)</computeroutput></para>
+<para>Parameters:<itemizedlist>
+<listitem>
+<para>arr : The int array to be written.</para>
+</listitem><listitem>
+<para>size : The length of the array.</para>
+</listitem><listitem>
+<para>filename : The path of the file to be created.</para>
+</listitem></itemizedlist>
+</para>
+
+<para>Returns:<itemizedlist>
+<listitem>
+<para>0 : The file was created and written succesfully.</para>
+</listitem><listitem>
+<para>-1 : The file couldn&apos;t be created.</para>
+</listitem></itemizedlist>
+</para>
+
+<para>Details: Writes an int array to a file. </para>
+</section>
+<anchor xml:id="_file__handler_8c_1a1a8f5a1584d8481bee7a405e264c8cec"/><section>
+    <title>write_long_array_to_file()</title>
+<indexterm><primary>write_long_array_to_file</primary><secondary>file_handler.c</secondary></indexterm>
+<indexterm><primary>file_handler.c</primary><secondary>write_long_array_to_file</secondary></indexterm>
+<para><computeroutput>int write_long_array_to_file (long arr[], int size, const char * filename)</computeroutput></para>
+<para>Parameters:<itemizedlist>
+<listitem>
+<para>arr : The long array to be written.</para>
+</listitem><listitem>
+<para>size : The length of the array.</para>
+</listitem><listitem>
+<para>filename : The path of the file to be created.</para>
+</listitem></itemizedlist>
+</para>
+
+<para>Returns:<itemizedlist>
+<listitem>
+<para>0 : The file was created and written succesfully.</para>
+</listitem><listitem>
+<para>-1 : The file couldn&apos;t be created.</para>
+</listitem></itemizedlist>
+</para>
+
+<para>Details: Writes a long array to a file. </para>
+</section>
+</section>
+</section>

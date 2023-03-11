@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_8__feladat_8c" xml:lang="en-US">
+<title>1-gyakorlat/8_feladat.c File Reference</title>
+<indexterm><primary>1-gyakorlat/8_feladat.c</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &lt;stdio.h&gt;<?linebreak?>#include &lt;sys/stat.h&gt;<?linebreak?>#include &lt;stdlib.h&gt;<?linebreak?>#include &quot;helper-libraries/file_handler.h&quot;<?linebreak?></programlisting><simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>int <link linkend="_8__feladat_8c_1ae66f6b31b5ad750f1fe042a706a4e3d4">main</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_8__feladat_8c_1ae66f6b31b5ad750f1fe042a706a4e3d4"/><section>
+    <title>main()</title>
+<indexterm><primary>main</primary><secondary>8_feladat.c</secondary></indexterm>
+<indexterm><primary>8_feladat.c</primary><secondary>main</secondary></indexterm>
+<para><computeroutput>int main ( )</computeroutput></para>
+<para>Write a program that writes the contents of an <emphasis>array</emphasis> into a file.<itemizedlist>
+<listitem>
+<para>Do it in a seperate function.</para>
+</listitem><listitem>
+<para>Make a seperate function for <emphasis>int</emphasis> , <emphasis>long</emphasis> and <emphasis>float</emphasis>.</para>
+</listitem><listitem>
+<para>Check the size of the files created.</para>
+</listitem><listitem>
+<para>Make a seperate function for the reading of these files.</para>
+</listitem></itemizedlist>
+</para>
+
+<para>How to compile :</para>
+
+<para>gcc .\<link linkend="_8__feladat_8c">8_feladat.c</link> .\helper<link linkend="_file__handler_8c">-libraries\file_handler.c</link> -o 8_feladat.exe </para>
+</section>
+</section>
+</section>

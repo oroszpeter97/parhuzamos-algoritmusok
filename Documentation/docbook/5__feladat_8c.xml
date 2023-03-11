@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_5__feladat_8c" xml:lang="en-US">
+<title>1-gyakorlat/5_feladat.c File Reference</title>
+<indexterm><primary>1-gyakorlat/5_feladat.c</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &lt;stdio.h&gt;<?linebreak?>#include &lt;stdlib.h&gt;<?linebreak?>#include &lt;time.h&gt;<?linebreak?></programlisting><simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>int <link linkend="_5__feladat_8c_1a0ddf1224851353fc92bfbff6f499fa97">main</link> (int argc, char *argv[])</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_5__feladat_8c_1a0ddf1224851353fc92bfbff6f499fa97"/><section>
+    <title>main()</title>
+<indexterm><primary>main</primary><secondary>5_feladat.c</secondary></indexterm>
+<indexterm><primary>5_feladat.c</primary><secondary>main</secondary></indexterm>
+<para><computeroutput>int main (int argc, char * argv[])</computeroutput></para>
+<para>Write a program that for its input paramter gets two numbers for an interval ( <emphasis>lower_bound</emphasis> and <emphasis>upper_bound</emphasis> ) then generates a random number in this interval! Check for the correct arguments and throw an error if incorrect!</para>
+
+<para>How to compile:</para>
+
+<para>gcc .\<link linkend="_5__feladat_8c">5_feladat.c</link> -o 5_feladat.exe </para>
+</section>
+</section>
+</section>
